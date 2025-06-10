@@ -19,10 +19,13 @@ export default async function Page({ params }: any) {
         <main className="w-full px-4 md:px-8 py-6 md:py-3">
           <div className="mx-auto max-w-6xl h-auto md:min-h-full flex flex-col gap-5 pb-10">
             <CalculatorLogo />
-            <Card className="px-3 gap-2">
-              <h2 className="text-xl font-semibold">{calculator.name}</h2>
-              <p className="text-base">{calculator.description}</p>
-            </Card>
+            <div className="flex flex-col md:flex-row gap-6">
+              <Card className="w-full md:w-[50%] px-3 gap-2"></Card>
+              <Card className="w-full md:w-[50%] px-3 gap-2">
+                <h2 className="text-xl font-semibold">{calculator.name}</h2>
+                <p className="text-base">{calculator.description}</p>
+              </Card>
+            </div>
           </div>
         </main>
       );
