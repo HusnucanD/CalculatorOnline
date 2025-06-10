@@ -1,9 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import { DynamicIcon } from "lucide-react/dynamic";
 import { Card } from "@/components/ui/card";
 import { Calculator } from "@/app/model/types";
-import { headers } from "next/headers";
 
 export const revalidate = false;
 
