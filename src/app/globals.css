@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/font/FiraSans-Light.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/font/FiraSans-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/font/FiraSans-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 600;
+  src: url("/font/FiraSans-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/font/FiraSans-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 800;
+  src: url("/font/FiraSans-ExtraBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: FiraSans;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/font/FiraSans-Black.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --background: #f0e6ed;
+  --foreground: #471f3d;
+  --card: #f0e6ed;
+  --card-foreground: #471f3d;
+  --popover: #ffffff;
+  --popover-foreground: #471f3d;
+  --primary: #914e56;
+  --primary-foreground: #ffffff;
+  --secondary: #e4bbcc;
+  --secondary-foreground: #6c3c5f;
+  --muted: #ecd8e1;
+  --muted-foreground: #784b6c;
+  --accent: #e4bbcc;
+  --accent-foreground: #6c3c5f;
+  --destructive: #94634e;
+  --destructive-foreground: #ffffff;
+  --border: #e1b5cf;
+  --input: #dab9c5;
+  --ring: #b83d4b;
+  --chart-1: #b53e68;
+  --chart-2: #8a2998;
+  --chart-3: #2b3749;
+  --chart-4: #ccd16e;
+  --chart-5: #dbc36a;
+  --sidebar: #ecd7e8;
+  --sidebar-foreground: #8e2a40;
+  --sidebar-primary: #47444e;
+  --sidebar-primary-foreground: #f0e2e7;
+  --sidebar-accent: #ebecea;
+  --sidebar-accent-foreground: #47444e;
+  --sidebar-border: #e0dfdd;
+  --sidebar-ring: #b83d4b;
+  --font-sans: FiraSans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: FiraSans, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+}
+
+.dark {
+  --background: #231d24;
+  --foreground: #cfbbd2;
+  --card: #2c262e;
+  --card-foreground: #cfbcc1;
+  --popover: #1e1518;
+  --popover-foreground: #eee3e5;
+  --primary: #841726;
+  --primary-foreground: #e2b8bf;
+  --secondary: #372d38;
+  --secondary-foreground: #d1bed5;
+  --muted: #282229;
+  --muted-foreground: #bfafc3;
+  --accent: #48384b;
+  --accent-foreground: #eee3e5;
+  --destructive: #291814;
+  --destructive-foreground: #ffffff;
+  --border: #373132;
+  --input: #393336;
+  --ring: #b83d4b;
+  --chart-1: #914e56;
+  --chart-2: #a956b4;
+  --chart-3: #c9b341;
+  --chart-4: #c360c3;
+  --chart-5: #c54546;
+  --sidebar: #1d161a;
+  --sidebar-foreground: #d4c1c5;
+  --sidebar-primary: #3f36b3;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #221a1d;
+  --sidebar-accent-foreground: #e8e8e9;
+  --sidebar-border: #000000;
+  --sidebar-ring: #b83d4b;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-serif: var(--font-serif);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  } 
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fafafa;       
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);       
+  border-radius: 100px;
+  border: 3px solid var(--border);  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border);          
+}
+
+[data-sonner-toast][data-styled=true] {
+    color: var(--foreground) !important;
+    font-family: FiraSans !important;
+}
+
+[data-sonner-toast][data-styled=true] [data-title] {
+    font-weight: 700 !important;
+    font-size: var(--text-base) !important;
+    color: var(--primary) !important;
+}
+
+[data-rich-colors=true][data-sonner-toast][data-styled=true] [data-description] {
+    font-weight: 500 !important;
+    font-size: var(--text-sm) !important;
+}
