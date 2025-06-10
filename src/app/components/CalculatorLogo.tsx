@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const revalidate = false;
 
 export default function CalculatorLogo() {
   return (
     <Link href="/">
-      <img
+      <Image
         src="/logo.svg"
         alt="Calculator Online"
         width={1000}
