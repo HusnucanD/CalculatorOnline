@@ -2,18 +2,18 @@ import { redirect, RedirectType } from "next/navigation";
 import { DynamicIcon } from "lucide-react/dynamic";
 import { Card } from "@/components/ui/card";
 import CalculatorLogo from "@/app/components/CalculatorLogo";
-import { Calculator } from "@/app/model/types";
-import { getCalculators } from "@/lib/calculators";
+import { CalculatorAndCategoryData } from "@/app/model/types";
+import { getCalculatorsAndCategories } from "@/lib/calculatorsAndCategories";
 
 export const revalidate = false;
 
 export default async function Page({ params }: any) {
   const { calculation } = await params;
-  const calculators: Calculator[] = await getCalculators();
+  const calculatorAndCategoryData: CalculatorAndCategoryData = await getCalculatorsAndCategories();
   if (calculation) {
-    const index = calculators.findIndex((calculator) => calculator.slug == calculation);
+    const index = calculatorAndCategoryData.calculators.findIndex((calculator) => calculator.slug == calculation);
     if (index != -1) {
-      const calculator = calculators[index];
+      const calculator = calculatorAndCategoryData.calculators[index];
       console.log(calculator);
       return (
         <main className="w-full px-4 md:px-8 py-6 md:py-3">

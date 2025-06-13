@@ -3,7 +3,6 @@ import { IconName } from "lucide-react/dynamic";
 export interface Category {
   id: string;
   name: string;
-  logo: string;
 }
 
 export interface Calculator {
@@ -14,4 +13,9 @@ export interface Calculator {
   calculationFunction: string;
   slug: string;
   icon: IconName;
+}
+
+export interface CalculatorAndCategoryData {
+  categories: Category[];
+  calculators: Calculator[];
 }

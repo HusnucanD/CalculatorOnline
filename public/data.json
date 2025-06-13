@@ -1,272 +1,431 @@
-[
-  {
-    "id": 1,
-    "name": "Percentage Calculator",
-    "description": "Instantly figure out \"what percent of\" or \"what is the percentage increase/decrease\" between two numbers. Perfect for shopping discounts, grade changes, and quick business math when you need a fast percentage answer without reaching for a spreadsheet.",
-    "calculationFunction": "(part, whole) => (part / whole) * 100",
-    "categoryId": 1,
-    "slug": "percentage-calculator",
-    "icon": "percent"
-  },
-  {
-    "id": 2,
-    "name": "BMI Calculator",
-    "description": "Calculate your Body\u2011Mass Index (BMI) in seconds using height and weight and see whether you fall in the underweight, normal, overweight, or obese categories. Supports both metric and imperial units, making it ideal for fitness tracking, health apps, and wellness blogs looking to offer quick insight into healthy weight ranges.",
-    "calculationFunction": "(weightKg, heightCm) => weightKg / ((heightCm / 100) ** 2)",
-    "categoryId": 2,
-    "slug": "bmi-calculator",
-    "icon": "person-standing"
-  },
-  {
-    "id": 3,
-    "name": "Mortgage Calculator",
-    "description": "Estimate your monthly house payment, total interest cost, and payoff schedule for any fixed\u2011rate home loan. This mortgage calculator helps future homebuyers compare loan terms, down\u2011payment scenarios, and interest rates\u2014great SEO content for real\u2011estate, finance, and personal\u2011budgeting websites.",
-    "calculationFunction": "(principal, annualRatePct, years) => { const r = (annualRatePct / 100) / 12; const n = years * 12; return (principal * r) / (1 - Math.pow(1 + r, -n)); }",
-    "categoryId": 3,
-    "slug": "mortgage-calculator",
-    "icon": "house"
-  },
-  {
-    "id": 4,
-    "name": "Loan Calculator",
-    "description": "Compute the monthly payment, total cost, and payoff timeline for car loans, student debt, personal loans, and any other amortized borrowing. A must\u2011have tool for financial planning blogs, credit\u2011education resources, and comparison hubs covering loans and debt management strategies.",
-    "calculationFunction": "(principal, annualRatePct, years) => { const r = (annualRatePct / 100) / 12; const n = years * 12; return (principal * r) / (1 - Math.pow(1 + r, -n)); }",
-    "categoryId": 3,
-    "slug": "loan-calculator",
-    "icon": "hand-coins"
-  },
-  {
-    "id": 5,
-    "name": "Basic Calculator",
-    "description": "A lightning\u2011fast online basic calculator that performs add, subtract, multiply, and divide right in the browser\u2014no calculator app required. Ideal for educational sites, quick\u2011math landing pages, and productivity toolkits aiming to offer simple arithmetic on the fly.",
-    "calculationFunction": "(a, op, b) => { switch(op){ case '+': return a + b; case '-': return a - b; case '*': return a * b; case '/': return a / b; default: throw new Error('Unsupported operator'); } }",
-    "categoryId": 1,
-    "slug": "basic-calculator",
-    "icon": "calculator"
-  },
-  {
-    "id": 6,
-    "name": "Age Calculator",
-    "description": "Find someone\u2019s exact age today or determine the precise difference between any two dates in years, months, days\u2014even hours and minutes. Perfect for birthday websites, HR forms, genealogy projects, and anywhere date interval calculations improve user experience.",
-    "calculationFunction": "(date1, date2) => { const d1 = new Date(date1); const d2 = new Date(date2); const diffMs = Math.abs(d2 - d1); return diffMs / (1000 * 60 * 60 * 24 * 365.25); }",
-    "categoryId": 4,
-    "slug": "age-calculator",
-    "icon": "calendar"
-  },
-  {
-    "id": 7,
-    "name": "Tip Calculator",
-    "description": "Effortlessly calculate how much to tip, the new total bill, and how to split the cost among friends. Great for restaurant reviews, travel guides, and budgeting apps that want to add quick tip\u2011splitting convenience for diners on the go.",
-    "calculationFunction": "(bill, tipPct, people = 1) => { const tip = bill * tipPct / 100; const total = bill + tip; return { tip, total, perPerson: total / people }; }",
-    "categoryId": 5,
-    "slug": "tip-calculator",
-    "icon": "hand-platter"
-  },
-  {
-    "id": 8,
-    "name": "Calorie Calculator",
-    "description": "Estimate your personalized daily calorie target using the science\u2011backed Mifflin\u2011St\u00a0Jeor equation, adjusting for age, height, weight, sex, and activity level. Essential for nutrition planners, weight\u2011loss blogs, and fitness apps aiming to provide accurate caloric guidance to readers.",
-    "calculationFunction": "(sex, weightKg, heightCm, ageYears, activityFactor = 1.2) => { const bmr = sex === 'male' ? 10 * weightKg + 6.25 * heightCm - 5 * ageYears + 5 : 10 * weightKg + 6.25 * heightCm - 5 * ageYears - 161; return bmr * activityFactor; }",
-    "categoryId": 2,
-    "slug": "calorie-calculator",
-    "icon": "ham"
-  },
-  {
-    "id": 9,
-    "name": "Compound Interest Calculator",
-    "description": "Project how your savings or investment will grow with compound interest\u2014including optional monthly or yearly contributions\u2014to visualize wealth accumulation over time. Valuable for personal\u2011finance portals, retirement calculators, and savings challenge articles seeking engaging, growth\u2011projection tools.",
-    "calculationFunction": "(principal, annualRatePct, years, timesPerYear = 1, contribution = 0) => { const r = annualRatePct / 100; const n = timesPerYear; const fvPrincipal = principal * Math.pow(1 + r / n, n * years); const fvContrib = contribution * (Math.pow(1 + r / n, n * years) - 1) / (r / n); return fvPrincipal + fvContrib; }",
-    "categoryId": 3,
-    "slug": "compound-interest-calculator",
-    "icon": "landmark"
-  },
-  {
-    "id": 10,
-    "name": "Date Calculator",
-    "description": "Add or subtract days, weeks, or months from a given date, or find the number of days between two dates, accounting for leap years. A handy utility for project managers, travel itineraries, legal deadline calculators, and any content where date math simplifies planning.",
-    "calculationFunction": "(startDate, days) => { const d = new Date(startDate); d.setDate(d.getDate() + days); return d.toISOString().split('T')[0]; }",
-    "categoryId": 4,
-    "slug": "date-calculator",
-    "icon": "calendar-1"
-  },
-  {
-    "id": 11,
-    "name": "Sales Tax Calculator",
-    "description": "Quickly calculate the final price of goods or services by adding state or regional sales tax to any pre\u2011tax amount. Essential for e\u2011commerce platforms, shopping blogs, and point\u2011of\u2011sale guides that want to help users understand true checkout costs.",
-    "calculationFunction": "(amount, taxPct) => amount * (1 + taxPct / 100)",
-    "categoryId": 3,
-    "slug": "sales-tax-calculator",
-    "icon": "badge-dollar-sign"
-  },
-  {
-    "id": 12,
-    "name": "Discount Calculator",
-    "description": "Determine how much you\u2019ll save and what you\u2019ll pay after applying a percentage discount\u2014perfect for Black Friday deals, coupon sites, and online retailers promoting limited\u2011time offers.",
-    "calculationFunction": "(price, discountPct) => price * (1 - discountPct / 100)",
-    "categoryId": 3,
-    "slug": "discount-calculator",
-    "icon": "badge-percent"
-  },
-  {
-    "id": 13,
-    "name": "ROI Calculator",
-    "description": "Measure the profitability of any investment or marketing campaign by comparing net gain to initial cost. Ideal for finance blogs, startup dashboards, and digital marketers tracking campaign performance.",
-    "calculationFunction": "(gain, cost) => ((gain - cost) / cost) * 100",
-    "categoryId": 3,
-    "slug": "roi-calculator",
-    "icon": "briefcase-business"
-  },
-  {
-    "id": 14,
-    "name": "Markup Calculator",
-    "description": "Find the selling price or markup percentage needed to hit a target profit margin on any product. Great for small\u2011business owners, dropshipping resources, and retail pricing strategists.",
-    "calculationFunction": "(cost, markupPct) => cost * (1 + markupPct / 100)",
-    "categoryId": 3,
-    "slug": "markup-calculator",
-    "icon": "arrow-down-1-0"
-  },
-  {
-    "id": 15,
-    "name": "GPA Calculator",
-    "description": "Calculate cumulative Grade Point Average by weighting course grades with credit hours\u2014a valuable academic\u2011planning tool for students, schools, and education portals.",
-    "calculationFunction": "(grades, credits) => { let total = 0, creditSum = 0; for(let i=0;i<grades.length;i++){ total += grades[i] * credits[i]; creditSum += credits[i]; } return total / creditSum; }",
-    "categoryId": 1,
-    "slug": "gpa-calculator",
-    "icon": "school"
-  },
-  {
-    "id": 16,
-    "name": "Hours Calculator",
-    "description": "Compute total hours worked between start and end times, streamlining timesheets for freelancers, HR departments, and project managers tracking billable hours.",
-    "calculationFunction": "(startTime, endTime) => { const ms = new Date(`1970-01-01T${endTime}:00Z`) - new Date(`1970-01-01T${startTime}:00Z`); return ms / 3600000; }",
-    "categoryId": 4,
-    "slug": "hours-calculator",
-    "icon": "clock"
-  },
-  {
-    "id": 17,
-    "name": "Pregnancy Due Date Calculator",
-    "description": "Estimate the expected delivery date by adding 280 days (40 weeks) to the first day of the last menstrual period\u2014vital content for prenatal health apps, pregnancy blogs, and OB\u2011GYN clinic websites.",
-    "calculationFunction": "(lmpDate) => { const d = new Date(lmpDate); d.setDate(d.getDate() + 280); return d.toISOString().split('T')[0]; }",
-    "categoryId": 2,
-    "slug": "pregnancy-due-date-calculator",
-    "icon": "venus"
-  },
-  {
-    "id": 18,
-    "name": "Body Fat Calculator",
-    "description": "Approximate body\u2011fat percentage using the U.S. Navy method with neck, waist, hip, and height measurements\u2014popular on fitness and bodybuilding sites offering physique assessment tools.",
-    "calculationFunction": "(sex, waistCm, neckCm, heightCm, hipCm = null) => { if(sex === 'male'){ return 495 / (1.0324 - 0.19077*Math.log10(waistCm - neckCm) + 0.15456*Math.log10(heightCm)) - 450; } if(sex === 'female'){ if(hipCm === null) throw new Error('Hip circumference required for females'); return 495 / (1.29579 - 0.35004*Math.log10(waistCm + hipCm - neckCm) + 0.221*Math.log10(heightCm)) - 450; } throw new Error('Sex must be \"male\" or \"female\"'); }",
-    "categoryId": 2,
-    "slug": "body-fat-calculator",
-    "icon": "clipboard-plus"
-  },
-  {
-    "id": 19,
-    "name": "Target Heart Rate Calculator",
-    "description": "Find personalized moderate and vigorous training heart\u2011rate zones based on age, perfect for cardio workouts, endurance training programs, and sports performance blogs.",
-    "calculationFunction": "(age) => { const max = 220 - age; return { moderate: [0.5*max, 0.7*max], vigorous: [0.7*max, 0.85*max] }; }",
-    "categoryId": 2,
-    "slug": "target-heart-rate-calculator",
-    "icon": "heart-pulse"
-  },
-  {
-    "id": 20,
-    "name": "Sales Margin Calculator",
-    "description": "Calculate profit margin percentage or determine selling price and profit based on cost and revenue figures\u2014ideal for e\u2011commerce entrepreneurs and financial analysis articles.",
-    "calculationFunction": "(sellingPrice, cost) => ((sellingPrice - cost) / sellingPrice) * 100",
-    "categoryId": 3,
-    "slug": "sales-margin-calculator",
-    "icon": "tickets"
-  },
-  {
-    "id": 21,
-    "name": "Retirement Savings Calculator",
-    "description": "Forecast how much you\u2019ll have at retirement age by combining current savings, monthly contributions, expected rate of return, and inflation assumptions. Essential for retirement\u2011planning guides and financial\u2011independence blogs.",
-    "calculationFunction": "(currentBalance, monthlyContrib, annualReturnPct, years) => { const r = annualReturnPct/100/12; const n = years*12; const futureValue = currentBalance * Math.pow(1+r, n) + monthlyContrib * (Math.pow(1+r, n)-1)/r; return futureValue; }",
-    "categoryId": 3,
-    "slug": "retirement-savings-calculator",
-    "icon": "piggy-bank"
-  },
-  {
-    "id": 22,
-    "name": "VAT Calculator",
-    "description": "Add or remove Value\u2011Added Tax from prices quickly for international shoppers and businesses that must handle inclusive and exclusive VAT pricing models.",
-    "calculationFunction": "(amount, vatPct, mode='add') => mode==='add' ? amount*(1+vatPct/100) : amount/(1+vatPct/100)",
-    "categoryId": 3,
-    "slug": "vat-calculator",
-    "icon": "earth-lock"
-  },
-  {
-    "id": 23,
-    "name": "Currency Converter",
-    "description": "Convert one currency to another using a supplied exchange rate\u2014perfect for travel sites, finance dashboards, and ecommerce platforms with global customers.",
-    "calculationFunction": "(amount, rate) => amount * rate",
-    "categoryId": 3,
-    "slug": "currency-converter",
-    "icon": "euro"
-  },
-  {
-    "id": 24,
-    "name": "Fuel Cost Calculator",
-    "description": "Estimate total fuel cost for a trip by combining distance, vehicle fuel efficiency, and current fuel price. Great for road\u2011trip planners, automotive blogs, and fleet\u2011management tools.",
-    "calculationFunction": "(distanceKm, efficiencyKmPerLiter, pricePerLiter) => (distanceKm / efficiencyKmPerLiter) * pricePerLiter",
-    "categoryId": 5,
-    "slug": "fuel-cost-calculator",
-    "icon": "fuel"
-  },
-  {
-    "id": 25,
-    "name": "Pace Calculator",
-    "description": "Calculate running or cycling pace (minutes per kilometer or mile) from distance and time\u2014popular with endurance athletes, running clubs, and fitness\u2011tracking apps.",
-    "calculationFunction": "(distanceKm, timeMinutes) => timeMinutes / distanceKm",
-    "categoryId": 2,
-    "slug": "pace-calculator",
-    "icon": "speech"
-  },
-  {
-    "id": 26,
-    "name": "Circle Area Calculator",
-    "description": "Instantly compute the area of a circle from its radius or diameter\u2014handy for geometry homework, carpentry projects, and design calculations.",
-    "calculationFunction": "(radius) => Math.PI * radius * radius",
-    "categoryId": 1,
-    "slug": "circle-area-calculator",
-    "icon": "circle-dashed"
-  },
-  {
-    "id": 27,
-    "name": "Quadratic Equation Solver",
-    "description": "Solve any quadratic equation (ax\u00b2 + bx + c = 0) and present real or complex roots, ideal for math students, educators, and tutorial sites.",
-    "calculationFunction": "(a, b, c) => { const discr = b*b - 4*a*c; if (discr >= 0) { const sqrt = Math.sqrt(discr); return [(-b+sqrt)/(2*a), (-b-sqrt)/(2*a)]; } else { const real = -b/(2*a); const imag = Math.sqrt(-discr)/(2*a); return [`${real}+${imag}i`, `${real}-${imag}i`]; } }",
-    "categoryId": 1,
-    "slug": "quadratic-equation-solver",
-    "icon": "decimals-arrow-right"
-  },
-  {
-    "id": 28,
-    "name": "Rent Split Calculator",
-    "description": "Fairly divide total rent among roommates based on room size or amenity value. A great tool for housing blogs, roommate\u2011matching apps, and student life resources.",
-    "calculationFunction": "(totalRent, weights) => { const sum = weights.reduce((a,b)=>a+b,0); return weights.map(w=> totalRent * w / sum); }",
-    "categoryId": 5,
-    "slug": "rent-split-calculator",
-    "icon": "house-plus"
-  },
-  {
-    "id": 29,
-    "name": "Debt\u2011to\u2011Income Ratio Calculator",
-    "description": "Assess borrowing capacity by comparing total monthly debt payments to gross monthly income\u2014crucial for mortgage pre\u2011qualification content and credit\u2011education sites.",
-    "calculationFunction": "(monthlyDebt, monthlyIncome) => (monthlyDebt / monthlyIncome) * 100",
-    "categoryId": 3,
-    "slug": "debt-to-income-ratio-calculator",
-    "icon": "wallet-cards"
-  },
-  {
-    "id": 30,
-    "name": "Body Surface Area Calculator",
-    "description": "Compute Body Surface Area (BSA) using the DuBois formula, useful for medication dosing, medical research, and hospital dosing calculators.",
-    "calculationFunction": "(heightCm, weightKg) => 0.007184 * Math.pow(heightCm, 0.725) * Math.pow(weightKg, 0.425)",
-    "categoryId": 2,
-    "slug": "body-surface-area-calculator",
-    "icon": "hand"
-  }
-]
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "General Math"
+    },
+    {
+      "id": 2,
+      "name": "Health & Fitness"
+    },
+    {
+      "id": 3,
+      "name": "Finance & Business"
+    },
+    {
+      "id": 4,
+      "name": "Time & Date"
+    },
+    {
+      "id": 5,
+      "name": "Lifestyle & Miscellaneous"
+    }
+  ],
+  "calculators": [
+    {
+      "id": 1,
+      "name": "Percentage Calculator",
+      "description": "Instantly figure out \"what percent of\" or \"what is the percentage increase/decrease\" between two numbers. Perfect for shopping discounts, grade changes, and quick business math when you need a fast percentage answer without reaching for a spreadsheet.",
+      "calculationFunction": "(part: number, whole: number): number => (part / whole) * 100",
+      "inputs": [
+        { "name": "part", "label": "Part", "type": "number" },
+        { "name": "whole", "label": "Whole", "type": "number" }
+      ],
+      "categoryId": 1,
+      "slug": "percentage-calculator",
+      "icon": "percent"
+    },
+    {
+      "id": 2,
+      "name": "BMI Calculator",
+      "description": "Calculate your Body\u2011Mass Index (BMI) in seconds using height and weight and see whether you fall in the underweight, normal, overweight, or obese categories. Supports both metric and imperial units, making it ideal for fitness tracking, health apps, and wellness blogs looking to offer quick insight into healthy weight ranges.",
+      "calculationFunction": "(weightKg: number, heightCm: number): number => weightKg / ((heightCm / 100) ** 2)",
+      "inputs": [
+        { "name": "weightKg", "label": "Weight (kg)", "type": "number" },
+        { "name": "heightCm", "label": "Height (cm)", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "bmi-calculator",
+      "icon": "person-standing"
+    },
+    {
+      "id": 3,
+      "name": "Mortgage Calculator",
+      "description": "Estimate your monthly house payment, total interest cost, and payoff schedule for any fixed\u2011rate home loan. This mortgage calculator helps future homebuyers compare loan terms, down\u2011payment scenarios, and interest rates\u2014great SEO content for real\u2011estate, finance, and personal\u2011budgeting websites.",
+      "calculationFunction": "(principal: number, annualRatePct: number, years: number): number => { const r = (annualRatePct / 100) / 12; const n = years * 12; return (principal * r) / (1 - Math.pow(1 + r, -n)); }",
+      "inputs": [
+        { "name": "principal", "label": "Principal", "type": "number" },
+        { "name": "annualRatePct", "label": "Annual Rate (%)", "type": "number" },
+        { "name": "years", "label": "Years", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "mortgage-calculator",
+      "icon": "house"
+    },
+    {
+      "id": 4,
+      "name": "Loan Calculator",
+      "description": "Compute the monthly payment, total cost, and payoff timeline for car loans, student debt, personal loans, and any other amortized borrowing. A must\u2011have tool for financial planning blogs, credit\u2011education resources, and comparison hubs covering loans and debt management strategies.",
+      "calculationFunction": "(principal: number, annualRatePct: number, years: number): number => { const r = (annualRatePct / 100) / 12; const n = years * 12; return (principal * r) / (1 - Math.pow(1 + r, -n)); }",
+      "inputs": [
+        { "name": "principal", "label": "Principal", "type": "number" },
+        { "name": "annualRatePct", "label": "Annual Rate (%)", "type": "number" },
+        { "name": "years", "label": "Years", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "loan-calculator",
+      "icon": "hand-coins"
+    },
+    {
+      "id": 5,
+      "name": "Basic Calculator",
+      "description": "A lightning\u2011fast online basic calculator that performs add, subtract, multiply, and divide right in the browser\u2014no calculator app required. Ideal for educational sites, quick\u2011math landing pages, and productivity toolkits aiming to offer simple arithmetic on the fly.",
+      "calculationFunction": "(a: number, op: string, b: number): number => { switch(op){ case '+': return a + b; case '-': return a - b; case '*': return a * b; case '/': return a / b; default: throw new Error('Unsupported operator'); } }",
+      "inputs": [
+        { "name": "a", "label": "A", "type": "number" },
+        { "name": "op", "label": "Operator", "type": "string" },
+        { "name": "b", "label": "B", "type": "number" }
+      ],
+      "categoryId": 1,
+      "slug": "basic-calculator",
+      "icon": "calculator"
+    },
+    {
+      "id": 6,
+      "name": "Age Calculator",
+      "description": "Find someone\u2019s exact age today or determine the precise difference between any two dates in years, months, days\u2014even hours and minutes. Perfect for birthday websites, HR forms, genealogy projects, and anywhere date interval calculations improve user experience.",
+      "calculationFunction": "(date1: string | Date, date2: string | Date): number => { const d1 = new Date(date1); const d2 = new Date(date2); const diffMs = Math.abs(d2.getTime() - d1.getTime()); return diffMs / (1000 * 60 * 60 * 24 * 365.25); }",
+      "inputs": [
+        { "name": "date1", "label": "Date 1", "type": "Date" },
+        { "name": "date2", "label": "Date 2", "type": "Date" }
+      ],
+      "categoryId": 4,
+      "slug": "age-calculator",
+      "icon": "calendar"
+    },
+    {
+      "id": 7,
+      "name": "Tip Calculator",
+      "description": "Effortlessly calculate how much to tip, the new total bill, and how to split the cost among friends. Great for restaurant reviews, travel guides, and budgeting apps that want to add quick tip\u2011splitting convenience for diners on the go.",
+      "calculationFunction": "(bill: number, tipPct: number, people: number = 1): { tip: number; total: number; perPerson: number } => { const tip = bill * tipPct / 100; const total = bill + tip; return { tip, total, perPerson: total / people }; }",
+      "inputs": [
+        { "name": "bill", "label": "Bill Amount", "type": "number" },
+        { "name": "tipPct", "label": "Tip (%)", "type": "number" },
+        { "name": "people", "label": "Number of People", "type": "number" }
+      ],
+      "categoryId": 5,
+      "slug": "tip-calculator",
+      "icon": "hand-platter"
+    },
+    {
+      "id": 8,
+      "name": "Calorie Calculator",
+      "description": "Estimate your personalized daily calorie target using the science\u2011backed Mifflin\u2011St\u00a0Jeor equation, adjusting for age, height, weight, sex, and activity level. Essential for nutrition planners, weight\u2011loss blogs, and fitness apps aiming to provide accurate caloric guidance to readers.",
+      "calculationFunction": "(sex: string, weightKg: number, heightCm: number, ageYears: number, activityFactor: number = 1.2): number => { const bmr = sex === 'male' ? 10 * weightKg + 6.25 * heightCm - 5 * ageYears + 5 : 10 * weightKg + 6.25 * heightCm - 5 * ageYears - 161; return bmr * activityFactor; }",
+      "inputs": [
+        { "name": "sex", "label": "Sex", "type": "string" },
+        { "name": "weightKg", "label": "Weight (kg)", "type": "number" },
+        { "name": "heightCm", "label": "Height (cm)", "type": "number" },
+        { "name": "ageYears", "label": "Age (years)", "type": "number" },
+        { "name": "activityFactor", "label": "Activity Factor", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "calorie-calculator",
+      "icon": "ham"
+    },
+    {
+      "id": 9,
+      "name": "Compound Interest Calculator",
+      "description": "Project how your savings or investment will grow with compound interest\u2014including optional monthly or yearly contributions\u2014to visualize wealth accumulation over time. Valuable for personal\u2011finance portals, retirement calculators, and savings challenge articles seeking engaging, growth\u2011projection tools.",
+      "calculationFunction": "(principal: number, annualRatePct: number, years: number, timesPerYear: number = 1, contribution: number = 0): number => { const r = annualRatePct / 100; const n = timesPerYear; const fvPrincipal = principal * Math.pow(1 + r / n, n * years); const fvContrib = contribution * (Math.pow(1 + r / n, n * years) - 1) / (r / n); return fvPrincipal + fvContrib; }",
+      "inputs": [
+        { "name": "principal", "label": "Principal", "type": "number" },
+        { "name": "annualRatePct", "label": "Annual Rate (%)", "type": "number" },
+        { "name": "years", "label": "Years", "type": "number" },
+        { "name": "timesPerYear", "label": "Times Compounded per Year", "type": "number" },
+        { "name": "contribution", "label": "Periodic Contribution", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "compound-interest-calculator",
+      "icon": "landmark"
+    },
+    {
+      "id": 10,
+      "name": "Date Calculator",
+      "description": "Add or subtract days, weeks, or months from a given date, or find the number of days between two dates, accounting for leap years. A handy utility for project managers, travel itineraries, legal deadline calculators, and any content where date math simplifies planning.",
+      "calculationFunction": "(startDate: string | Date, days: number): string => { const d = new Date(startDate); d.setDate(d.getDate() + days); return d.toISOString().split('T')[0]; }",
+      "inputs": [
+        { "name": "startDate", "label": "Start Date", "type": "Date" },
+        { "name": "days", "label": "Days to Add/Subtract", "type": "number" }
+      ],
+      "categoryId": 4,
+      "slug": "date-calculator",
+      "icon": "calendar-1"
+    },
+    {
+      "id": 11,
+      "name": "Sales Tax Calculator",
+      "description": "Quickly calculate the final price of goods or services by adding state or regional sales tax to any pre\u2011tax amount. Essential for e\u2011commerce platforms, shopping blogs, and point\u2011of\u2011sale guides that want to help users understand true checkout costs.",
+      "calculationFunction": "(amount: number, taxPct: number): number => amount * (1 + taxPct / 100)",
+      "inputs": [
+        { "name": "amount", "label": "Amount", "type": "number" },
+        { "name": "taxPct", "label": "Tax (%)", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "sales-tax-calculator",
+      "icon": "badge-dollar-sign"
+    },
+    {
+      "id": 12,
+      "name": "Discount Calculator",
+      "description": "Determine how much you\u2019ll save and what you\u2019ll pay after applying a percentage discount\u2014perfect for Black Friday deals, coupon sites, and online retailers promoting limited\u2011time offers.",
+      "calculationFunction": "(price: number, discountPct: number): number => price * (1 - discountPct / 100)",
+      "inputs": [
+        { "name": "price", "label": "Price", "type": "number" },
+        { "name": "discountPct", "label": "Discount (%)", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "discount-calculator",
+      "icon": "badge-percent"
+    },
+    {
+      "id": 13,
+      "name": "ROI Calculator",
+      "description": "Measure the profitability of any investment or marketing campaign by comparing net gain to initial cost. Ideal for finance blogs, startup dashboards, and digital marketers tracking campaign performance.",
+      "calculationFunction": "(gain: number, cost: number): number => ((gain - cost) / cost) * 100",
+      "inputs": [
+        { "name": "gain", "label": "Gain", "type": "number" },
+        { "name": "cost", "label": "Cost", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "roi-calculator",
+      "icon": "briefcase-business"
+    },
+    {
+      "id": 14,
+      "name": "Markup Calculator",
+      "description": "Find the selling price or markup percentage needed to hit a target profit margin on any product. Great for small\u2011business owners, dropshipping resources, and retail pricing strategists.",
+      "calculationFunction": "(cost: number, markupPct: number): number => cost * (1 + markupPct / 100)",
+      "inputs": [
+        { "name": "cost", "label": "Cost", "type": "number" },
+        { "name": "markupPct", "label": "Markup (%)", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "markup-calculator",
+      "icon": "arrow-down-1-0"
+    },
+    {
+      "id": 15,
+      "name": "GPA Calculator",
+      "description": "Calculate cumulative Grade Point Average by weighting course grades with credit hours\u2014a valuable academic\u2011planning tool for students, schools, and education portals.",
+      "calculationFunction": "(grades: number[], credits: number[]): number => { let total = 0, creditSum = 0; for(let i=0;i<grades.length;i++){ total += grades[i] * credits[i]; creditSum += credits[i]; } return total / creditSum; }",
+      "inputs": [
+        { "name": "grades", "label": "Grades", "type": "number[]" },
+        { "name": "credits", "label": "Credits", "type": "number[]" }
+      ],
+      "categoryId": 1,
+      "slug": "gpa-calculator",
+      "icon": "school"
+    },
+    {
+      "id": 16,
+      "name": "Hours Calculator",
+      "description": "Compute total hours worked between start and end times, streamlining timesheets for freelancers, HR departments, and project managers tracking billable hours.",
+      "calculationFunction": "(startTime: string, endTime: string): number => { const ms = new Date(`1970-01-01T${endTime}:00Z`).getTime() - new Date(`1970-01-01T${startTime}:00Z`).getTime(); return ms / 3600000; }",
+      "inputs": [
+        { "name": "startTime", "label": "Start Time", "type": "string" },
+        { "name": "endTime", "label": "End Time", "type": "string" }
+      ],
+      "categoryId": 4,
+      "slug": "hours-calculator",
+      "icon": "clock"
+    },
+    {
+      "id": 17,
+      "name": "Pregnancy Due Date Calculator",
+      "description": "Estimate the expected delivery date by adding 280 days (40 weeks) to the first day of the last menstrual period\u2014vital content for prenatal health apps, pregnancy blogs, and OB\u2011GYN clinic websites.",
+      "calculationFunction": "(lmpDate: string | Date): string => { const d = new Date(lmpDate); d.setDate(d.getDate() + 280); return d.toISOString().split('T')[0]; }",
+      "inputs": [
+        { "name": "lmpDate", "label": "Last Menstrual Period Date", "type": "Date" }
+      ],
+      "categoryId": 2,
+      "slug": "pregnancy-due-date-calculator",
+      "icon": "venus"
+    },
+    {
+      "id": 18,
+      "name": "Body Fat Calculator",
+      "description": "Approximate body\u2011fat percentage using the U.S. Navy method with neck, waist, hip, and height measurements\u2014popular on fitness and bodybuilding sites offering physique assessment tools.",
+      "calculationFunction": "(sex: string, waistCm: number, neckCm: number, heightCm: number, hipCm: number | null = null): number => { if(sex === 'male'){ return 495 / (1.0324 - 0.19077*Math.log10(waistCm - neckCm) + 0.15456*Math.log10(heightCm)) - 450; } if(sex === 'female'){ if(hipCm === null) throw new Error('Hip circumference required for females'); return 495 / (1.29579 - 0.35004*Math.log10(waistCm + hipCm - neckCm) + 0.221*Math.log10(heightCm)) - 450; } throw new Error('Sex must be \"male\" or \"female\"'); }",
+      "inputs": [
+        { "name": "sex", "label": "Sex", "type": "string" },
+        { "name": "waistCm", "label": "Waist (cm)", "type": "number" },
+        { "name": "neckCm", "label": "Neck (cm)", "type": "number" },
+        { "name": "heightCm", "label": "Height (cm)", "type": "number" },
+        { "name": "hipCm", "label": "Hip (cm)", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "body-fat-calculator",
+      "icon": "clipboard-plus"
+    },
+    {
+      "id": 19,
+      "name": "Target Heart Rate Calculator",
+      "description": "Find personalized moderate and vigorous training heart\u2011rate zones based on age, perfect for cardio workouts, endurance training programs, and sports performance blogs.",
+      "calculationFunction": "(age: number): { moderate: [number, number]; vigorous: [number, number] } => { const max = 220 - age; return { moderate: [0.5*max, 0.7*max], vigorous: [0.7*max, 0.85*max] }; }",
+      "inputs": [
+        { "name": "age", "label": "Age", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "target-heart-rate-calculator",
+      "icon": "heart-pulse"
+    },
+    {
+      "id": 20,
+      "name": "Sales Margin Calculator",
+      "description": "Calculate profit margin percentage or determine selling price and profit based on cost and revenue figures\u2014ideal for e\u2011commerce entrepreneurs and financial analysis articles.",
+      "calculationFunction": "(sellingPrice: number, cost: number): number => ((sellingPrice - cost) / sellingPrice) * 100",
+      "inputs": [
+        { "name": "sellingPrice", "label": "Selling Price", "type": "number" },
+        { "name": "cost", "label": "Cost", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "sales-margin-calculator",
+      "icon": "tickets"
+    },
+    {
+      "id": 21,
+      "name": "Retirement Savings Calculator",
+      "description": "Forecast how much you\u2019ll have at retirement age by combining current savings, monthly contributions, expected rate of return, and inflation assumptions. Essential for retirement\u2011planning guides and financial\u2011independence blogs.",
+      "calculationFunction": "(currentBalance: number, monthlyContrib: number, annualReturnPct: number, years: number): number => { const r = annualReturnPct/100/12; const n = years*12; const futureValue = currentBalance * Math.pow(1+r, n) + monthlyContrib * (Math.pow(1+r, n)-1)/r; return futureValue; }",
+      "inputs": [
+        { "name": "currentBalance", "label": "Current Balance", "type": "number" },
+        { "name": "monthlyContrib", "label": "Monthly Contribution", "type": "number" },
+        { "name": "annualReturnPct", "label": "Annual Return (%)", "type": "number" },
+        { "name": "years", "label": "Years", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "retirement-savings-calculator",
+      "icon": "piggy-bank"
+    },
+    {
+      "id": 22,
+      "name": "VAT Calculator",
+      "description": "Add or remove Value\u2011Added Tax from prices quickly for international shoppers and businesses that must handle inclusive and exclusive VAT pricing models.",
+      "calculationFunction": "(amount: number, vatPct: number, mode: string = 'add'): number => mode==='add' ? amount*(1+vatPct/100) : amount/(1+vatPct/100)",
+      "inputs": [
+        { "name": "amount", "label": "Amount", "type": "number" },
+        { "name": "vatPct", "label": "VAT (%)", "type": "number" },
+        { "name": "mode", "label": "Mode", "type": "string" }
+      ],
+      "categoryId": 3,
+      "slug": "vat-calculator",
+      "icon": "earth-lock"
+    },
+    {
+      "id": 23,
+      "name": "Currency Converter",
+      "description": "Convert one currency to another using a supplied exchange rate\u2014perfect for travel sites, finance dashboards, and ecommerce platforms with global customers.",
+      "calculationFunction": "(amount: number, rate: number): number => amount * rate",
+      "inputs": [
+        { "name": "amount", "label": "Amount", "type": "number" },
+        { "name": "rate", "label": "Exchange Rate", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "currency-converter",
+      "icon": "euro"
+    },
+    {
+      "id": 24,
+      "name": "Fuel Cost Calculator",
+      "description": "Estimate total fuel cost for a trip by combining distance, vehicle fuel efficiency, and current fuel price. Great for road\u2011trip planners, automotive blogs, and fleet\u2011management tools.",
+      "calculationFunction": "(distanceKm: number, efficiencyKmPerLiter: number, pricePerLiter: number): number => (distanceKm / efficiencyKmPerLiter) * pricePerLiter",
+      "inputs": [
+        { "name": "distanceKm", "label": "Distance (km)", "type": "number" },
+        { "name": "efficiencyKmPerLiter", "label": "Efficiency (km/liter)", "type": "number" },
+        { "name": "pricePerLiter", "label": "Price per Liter", "type": "number" }
+      ],
+      "categoryId": 5,
+      "slug": "fuel-cost-calculator",
+      "icon": "fuel"
+    },
+    {
+      "id": 25,
+      "name": "Pace Calculator",
+      "description": "Calculate running or cycling pace (minutes per kilometer or mile) from distance and time\u2014popular with endurance athletes, running clubs, and fitness\u2011tracking apps.",
+      "calculationFunction": "(distanceKm: number, timeMinutes: number): number => timeMinutes / distanceKm",
+      "inputs": [
+        { "name": "distanceKm", "label": "Distance (km)", "type": "number" },
+        { "name": "timeMinutes", "label": "Time (minutes)", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "pace-calculator",
+      "icon": "speech"
+    },
+    {
+      "id": 26,
+      "name": "Circle Area Calculator",
+      "description": "Instantly compute the area of a circle from its radius or diameter\u2014handy for geometry homework, carpentry projects, and design calculations.",
+      "calculationFunction": "(radius: number): number => Math.PI * radius * radius",
+      "inputs": [
+        { "name": "radius", "label": "Radius", "type": "number" }
+      ],
+      "categoryId": 1,
+      "slug": "circle-area-calculator",
+      "icon": "circle-dashed"
+    },
+    {
+      "id": 27,
+      "name": "Quadratic Equation Solver",
+      "description": "Solve any quadratic equation (ax\u00b2 + bx + c = 0) and present real or complex roots, ideal for math students, educators, and tutorial sites.",
+      "calculationFunction": "(a: number, b: number, c: number): (number | string)[] => { const discr = b*b - 4*a*c; if (discr >= 0) { const sqrt = Math.sqrt(discr); return [(-b+sqrt)/(2*a), (-b-sqrt)/(2*a)]; } else { const real = -b/(2*a); const imag = Math.sqrt(-discr)/(2*a); return [`${real}+${imag}i`, `${real}-${imag}i`]; } }",
+      "inputs": [
+        { "name": "a", "label": "A", "type": "number" },
+        { "name": "b", "label": "B", "type": "number" },
+        { "name": "c", "label": "C", "type": "number" }
+      ],
+      "categoryId": 1,
+      "slug": "quadratic-equation-solver",
+      "icon": "decimals-arrow-right"
+    },
+    {
+      "id": 28,
+      "name": "Rent Split Calculator",
+      "description": "Fairly divide total rent among roommates based on room size or amenity value. A great tool for housing blogs, roommate\u2011matching apps, and student life resources.",
+      "calculationFunction": "(totalRent: number, weights: number[]): number[] => { const sum = weights.reduce((a,b)=>a+b,0); return weights.map(w=> totalRent * w / sum); }",
+      "inputs": [
+        { "name": "totalRent", "label": "Total Rent", "type": "number" },
+        { "name": "weights", "label": "Weights", "type": "number[]" }
+      ],
+      "categoryId": 5,
+      "slug": "rent-split-calculator",
+      "icon": "house-plus"
+    },
+    {
+      "id": 29,
+      "name": "Debt\u2011to\u2011Income Ratio Calculator",
+      "description": "Assess borrowing capacity by comparing total monthly debt payments to gross monthly income\u2014crucial for mortgage pre\u2011qualification content and credit\u2011education sites.",
+      "calculationFunction": "(monthlyDebt: number, monthlyIncome: number): number => (monthlyDebt / monthlyIncome) * 100",
+      "inputs": [
+        { "name": "monthlyDebt", "label": "Monthly Debt", "type": "number" },
+        { "name": "monthlyIncome", "label": "Monthly Income", "type": "number" }
+      ],
+      "categoryId": 3,
+      "slug": "debt-to-income-ratio-calculator",
+      "icon": "wallet-cards"
+    },
+    {
+      "id": 30,
+      "name": "Body Surface Area Calculator",
+      "description": "Compute Body Surface Area (BSA) using the DuBois formula, useful for medication dosing, medical research, and hospital dosing calculators.",
+      "calculationFunction": "(heightCm: number, weightKg: number): number => 0.007184 * Math.pow(heightCm, 0.725) * Math.pow(weightKg, 0.425)",
+      "inputs": [
+        { "name": "heightCm", "label": "Height (cm)", "type": "number" },
+        { "name": "weightKg", "label": "Weight (kg)", "type": "number" }
+      ],
+      "categoryId": 2,
+      "slug": "body-surface-area-calculator",
+      "icon": "hand"
+    }
+  ]
+}
