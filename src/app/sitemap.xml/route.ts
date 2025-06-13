@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { getCalculators } from "@/lib/calculators";
-import { Calculator } from "@/app/model/types";
+import { getCalculatorsAndCategories } from "@/lib/calculatorsAndCategories";
+import { Calculator, CalculatorAndCategoryData } from "@/app/model/types";
 
 export async function GET() {
-  const calculators: Calculator[] = await getCalculators();
+  const calculatorAndCategoryData: CalculatorAndCategoryData = await getCalculatorsAndCategories();
   const urls: string[] = [];
-  calculators.forEach((calculator: Calculator) => {
+  calculatorAndCategoryData.calculators.forEach((calculator: Calculator) => {
     urls.push(`${calculator.slug}`);
   });
   const lastmod = new Date().toISOString().split("T")[0];
