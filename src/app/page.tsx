@@ -2,7 +2,7 @@ import CalculatorLogo from "@/app/components/CalculatorLogo";
 import CalculatorHeader from "@/app/components/CalculatorHeader";
 import CalculatorsGrid from "@/app/components/CalculatorsGrid";
 import { getCalculatorsAndCategories } from "@/lib/calculatorsAndCategories";
-import { Calculator, CalculatorAndCategoryData } from "@/app/model/types";
+import { CalculatorAndCategoryData } from "@/app/model/types";
 
 export const revalidate = false;
 
