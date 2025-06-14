@@ -13,7 +13,7 @@ export default function CalculatorLogo() {
     <Link href="/">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className={`w-50 md:w-70 mx-auto rounded-xl p-1 ${isActive ? 'active' : ''}`}
+        className={`w-50 md:w-70 mx-auto ${isActive ? 'active' : ''}`}
         aria-label="Calculator Online"
         version="1.2"
         viewBox="0 0 1440 480"

@@ -64,7 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-dark text-foreground selection:bg-primary selection:text-primary-foreground dark">
-        <div className="md:min-h-screen antialiased flex flex-col gap-4 md:pt-4">
+        <div className="md:min-h-screen antialiased flex flex-col gap-4 pt-2 md:pt-4">
           <CalculatorLogo></CalculatorLogo>
           <CalculatorHeader></CalculatorHeader>
           {children}
