@@ -14,14 +14,12 @@ interface CalculatorFormProps {
 export default function CalculatorForm({ calculator }: CalculatorFormProps) {
   return (
     <div className="flex flex-col gap-1 overflow-y-auto pl-1 pr-3 -ml-1 -mr-3">
-      {calculator.inputs.map((input) => {
+      {calculator.inputs.map((input, index) => {
         return (
-          <>
-            <Label className="text-base font-medium">
-              {input.label}
-            </Label>
-            <Input type={input.type} name={input.name} className="font-medium mb-3" />
-          </>
+          <div key={index}>
+            <Label className="text-base font-medium">{input.label}</Label>
+            <Input type={input.type} name={input.name} className="font-medium mt-2 mb-3" />
+          </div>
         );
       })}
       <div className="flex gap-2 mt-1">
