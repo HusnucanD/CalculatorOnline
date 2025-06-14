@@ -18,9 +18,9 @@ export default function CalculatorsGrid({ calculators }: CalculatorsGridProps) {
             <div style={{ width: "40px", height: "40px" }}>
               <DynamicIcon name={calculator.icon} size={40} />
             </div>
-            <h2 className="font-semibold flex flex-col items-center w-[80%] h-12 text-center">
+            <p className="text-base font-medium flex flex-col items-center w-[90%] min-h-14 text-center">
               {calculator.name}
-            </h2>
+            </p>
           </Card>
         </Link>
       ))}

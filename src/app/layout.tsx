@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "@/app/globals.css";
+import CalculatorLogo from "./components/CalculatorLogo";
+import CalculatorHeader from "./components/CalculatorHeader";
 
 export const metadata: Metadata = {
   title: {
@@ -62,7 +64,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-dark text-foreground selection:bg-primary selection:text-primary-foreground dark">
-        <div className="md:min-h-screen antialiased flex md:pt-3">{children}</div>
+        <div className="md:min-h-screen antialiased flex flex-col gap-4 md:pt-4">
+          <CalculatorLogo></CalculatorLogo>
+          <CalculatorHeader></CalculatorHeader>
+          {children}
+        </div>
         <Toaster
           position="top-center"
           toastOptions={{
