@@ -206,8 +206,8 @@ export default function CalculatorLogo() {
             `
               svg .svg-elem-1 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.3s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.3s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.25s;
               }
 
               svg.active .svg-elem-1 {
@@ -216,8 +216,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-2 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.35s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.35s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.275s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.275s;
               }
 
               svg.active .svg-elem-2 {
@@ -226,8 +226,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-3 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.4s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.4s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
               }
 
               svg.active .svg-elem-3 {
@@ -236,8 +236,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-4 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.45s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.45s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.325s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.325s;
               }
 
               svg.active .svg-elem-4 {
@@ -246,8 +246,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-5 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.25s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.25s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.35s;
               }
 
               svg.active .svg-elem-5 {
@@ -256,8 +256,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-6 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.55s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.55s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.375s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.375s;
               }
 
               svg.active .svg-elem-6 {
@@ -266,8 +266,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-7 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.6000000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.6000000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.4s;
               }
 
               svg.active .svg-elem-7 {
@@ -276,8 +276,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-8 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.65s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.65s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42500000000000004s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.42500000000000004s;
               }
 
               svg.active .svg-elem-8 {
@@ -286,8 +286,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-9 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.7s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.7s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.45s;
               }
 
               svg.active .svg-elem-9 {
@@ -296,8 +296,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-10 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.75s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.75s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.475s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.475s;
               }
 
               svg.active .svg-elem-10 {
@@ -306,8 +306,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-11 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.8s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.8s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.5s;
               }
 
               svg.active .svg-elem-11 {
@@ -316,8 +316,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-12 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.8500000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.8500000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.525s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.525s;
               }
 
               svg.active .svg-elem-12 {
@@ -326,8 +326,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-13 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.9000000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.9000000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.55s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.55s;
               }
 
               svg.active .svg-elem-13 {
@@ -336,8 +336,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-14 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.95s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 0.95s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.575s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.575s;
               }
 
               svg.active .svg-elem-14 {
@@ -346,8 +346,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-15 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6000000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6000000000000001s;
               }
 
               svg.active .svg-elem-15 {
@@ -356,8 +356,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-16 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.05s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.05s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.625s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.625s;
               }
 
               svg.active .svg-elem-16 {
@@ -366,8 +366,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-17 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.1s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.1s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.65s;
               }
 
               svg.active .svg-elem-17 {
@@ -376,8 +376,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-18 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.1500000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.1500000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.675s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.675s;
               }
 
               svg.active .svg-elem-18 {
@@ -386,8 +386,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-19 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.2s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.2s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7s;
               }
 
               svg.active .svg-elem-19 {
@@ -396,8 +396,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-20 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.25s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.25s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7250000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.7250000000000001s;
               }
 
               svg.active .svg-elem-20 {
@@ -406,8 +406,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-21 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.3s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.3s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.75s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.75s;
               }
 
               svg.active .svg-elem-21 {
@@ -416,8 +416,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-22 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.35s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.35s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.775s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.775s;
               }
 
               svg.active .svg-elem-22 {
@@ -426,8 +426,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-23 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.4000000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.4000000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
               }
 
               svg.active .svg-elem-23 {
@@ -436,8 +436,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-24 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.4500000000000002s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.4500000000000002s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8250000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8250000000000001s;
               }
 
               svg.active .svg-elem-24 {
@@ -446,8 +446,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-25 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.5000000000000002s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.5000000000000002s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8500000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8500000000000001s;
               }
 
               svg.active .svg-elem-25 {
@@ -456,8 +456,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-26 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.55s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.55s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.875s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.875s;
               }
 
               svg.active .svg-elem-26 {
@@ -466,8 +466,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-27 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.6s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.6s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9s;
               }
 
               svg.active .svg-elem-27 {
@@ -476,8 +476,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-28 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.6500000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.6500000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.925s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.925s;
               }
 
               svg.active .svg-elem-28 {
@@ -486,8 +486,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-29 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.7000000000000002s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.7000000000000002s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9500000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9500000000000001s;
               }
 
               svg.active .svg-elem-29 {
@@ -496,8 +496,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-30 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.7500000000000002s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.7500000000000002s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9750000000000001s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9750000000000001s;
               }
 
               svg.active .svg-elem-30 {
@@ -506,8 +506,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-31 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.8s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.8s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1s;
               }
 
               svg.active .svg-elem-31 {
@@ -516,8 +516,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-32 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.85s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.85s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.025s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.025s;
               }
 
               svg.active .svg-elem-32 {
@@ -526,8 +526,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-33 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.9000000000000001s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.9000000000000001s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.05s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.05s;
               }
 
               svg.active .svg-elem-33 {
@@ -536,8 +536,8 @@ export default function CalculatorLogo() {
 
               svg .svg-elem-34 {
                 fill: transparent;
-                -webkit-transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.9500000000000002s;
-                        transition: fill 0.25s cubic-bezier(0.25, 0, 0.745, 0.715) 1.9500000000000002s;
+                -webkit-transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.0750000000000002s;
+                        transition: fill 0.25s cubic-bezier(0.47, 0, 0.745, 0.715) 1.0750000000000002s;
               }
 
               svg.active .svg-elem-34 {
