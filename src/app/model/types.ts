@@ -11,6 +11,7 @@ export interface Calculator {
   name: string;
   description: string;
   calculationFunction: string;
+  inputs: CalculatorInput[];
   slug: string;
   icon: IconName;
 }
@@ -18,4 +19,10 @@ export interface Calculator {
 export interface CalculatorAndCategoryData {
   categories: Category[];
   calculators: Calculator[];
+}
+
+export interface CalculatorInput {
+  name: string;
+  label: string;
+  type: string;
 }
