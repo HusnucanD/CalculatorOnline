@@ -1,7 +1,6 @@
 import { redirect, RedirectType } from "next/navigation";
 import { DynamicIcon } from "lucide-react/dynamic";
 import { Card } from "@/components/ui/card";
-import CalculatorLogo from "@/app/components/CalculatorLogo";
 import { CalculatorAndCategoryData } from "@/app/model/types";
 import { getCalculatorsAndCategories } from "@/lib/calculatorsAndCategories";
 
