@@ -11,6 +11,7 @@ export interface Calculator {
   name: string;
   description: string;
   calculationFunction: string;
+  displayExpression: string;
   inputs: CalculatorInput[];
   slug: string;
   icon: IconName;

@@ -17,7 +17,7 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
       return acc;
     }, {} as Record<string, string>)
   );
-  const [result, setResult] = useState<string | number>(" ");
+  const [result, setResult] = useState<string | number>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -48,7 +48,7 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
   };
 
   return (
-    <div className="flex flex-col gap-1 overflow-y-auto pl-1 pr-3 -ml-1 -mr-3">
+    <div className="flex flex-col gap-1 overflow-y-auto pl-1 pr-4 -ml-1">
       {calculator.inputs.map((input, index) => {
         return (
           <div key={index}>
@@ -72,7 +72,7 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
         </Button>
       </div>
       <div className="bg-accent text-accent-foreground text-xl font-medium p-3 mt-4 rounded-md cursor-pointer text-center min-h-13">
-        {result}
+        {result + (result ? " " + calculator.displayExpression : "")}
       </div>
     </div>
   );

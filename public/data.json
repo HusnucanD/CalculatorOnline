@@ -32,6 +32,7 @@
         { "name": "whole", "label": "Whole", "type": "number" }
       ],
       "categoryId": 1,
+      "displayExpression": "%",
       "slug": "percentage-calculator",
       "icon": "percent"
     },
@@ -45,6 +46,7 @@
         { "name": "heightCm", "label": "Height (cm)", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "bmi-calculator",
       "icon": "person-standing"
     },
@@ -59,6 +61,7 @@
         { "name": "years", "label": "Years", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "mortgage-calculator",
       "icon": "house"
     },
@@ -73,6 +76,7 @@
         { "name": "years", "label": "Years", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "loan-calculator",
       "icon": "hand-coins"
     },
@@ -87,6 +91,7 @@
         { "name": "b", "label": "B", "type": "number" }
       ],
       "categoryId": 1,
+      "displayExpression": "",
       "slug": "basic-calculator",
       "icon": "calculator"
     },
@@ -100,6 +105,7 @@
         { "name": "date2", "label": "Date 2", "type": "Date" }
       ],
       "categoryId": 4,
+      "displayExpression": "",
       "slug": "age-calculator",
       "icon": "calendar"
     },
@@ -114,6 +120,7 @@
         { "name": "people", "label": "Number of People", "type": "number" }
       ],
       "categoryId": 5,
+      "displayExpression": "",
       "slug": "tip-calculator",
       "icon": "hand-platter"
     },
@@ -130,6 +137,7 @@
         { "name": "activityFactor", "label": "Activity Factor", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "calorie-calculator",
       "icon": "ham"
     },
@@ -146,6 +154,7 @@
         { "name": "contribution", "label": "Periodic Contribution", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "compound-interest-calculator",
       "icon": "landmark"
     },
@@ -159,6 +168,7 @@
         { "name": "days", "label": "Days to Add/Subtract", "type": "number" }
       ],
       "categoryId": 4,
+      "displayExpression": "",
       "slug": "date-calculator",
       "icon": "calendar-1"
     },
@@ -172,6 +182,7 @@
         { "name": "taxPct", "label": "Tax (%)", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "sales-tax-calculator",
       "icon": "badge-dollar-sign"
     },
@@ -185,6 +196,7 @@
         { "name": "discountPct", "label": "Discount (%)", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "discount-calculator",
       "icon": "badge-percent"
     },
@@ -198,6 +210,7 @@
         { "name": "cost", "label": "Cost", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "roi-calculator",
       "icon": "briefcase-business"
     },
@@ -211,6 +224,7 @@
         { "name": "markupPct", "label": "Markup (%)", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "markup-calculator",
       "icon": "arrow-down-1-0"
     },
@@ -224,6 +238,7 @@
         { "name": "credits", "label": "Credits", "type": "number[]" }
       ],
       "categoryId": 1,
+      "displayExpression": "",
       "slug": "gpa-calculator",
       "icon": "school"
     },
@@ -237,6 +252,7 @@
         { "name": "endTime", "label": "End Time", "type": "string" }
       ],
       "categoryId": 4,
+      "displayExpression": "",
       "slug": "hours-calculator",
       "icon": "clock"
     },
@@ -249,6 +265,7 @@
         { "name": "lmpDate", "label": "Last Menstrual Period Date", "type": "Date" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "pregnancy-due-date-calculator",
       "icon": "venus"
     },
@@ -265,6 +282,7 @@
         { "name": "hipCm", "label": "Hip (cm)", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "body-fat-calculator",
       "icon": "clipboard-plus"
     },
@@ -277,6 +295,7 @@
         { "name": "age", "label": "Age", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "target-heart-rate-calculator",
       "icon": "heart-pulse"
     },
@@ -290,6 +309,7 @@
         { "name": "cost", "label": "Cost", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "sales-margin-calculator",
       "icon": "tickets"
     },
@@ -305,6 +325,7 @@
         { "name": "years", "label": "Years", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "retirement-savings-calculator",
       "icon": "piggy-bank"
     },
@@ -319,6 +340,7 @@
         { "name": "mode", "label": "Mode", "type": "string" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "vat-calculator",
       "icon": "earth-lock"
     },
@@ -332,6 +354,7 @@
         { "name": "rate", "label": "Exchange Rate", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "currency-converter",
       "icon": "euro"
     },
@@ -346,6 +369,7 @@
         { "name": "pricePerLiter", "label": "Price per Liter", "type": "number" }
       ],
       "categoryId": 5,
+      "displayExpression": "",
       "slug": "fuel-cost-calculator",
       "icon": "fuel"
     },
@@ -359,6 +383,7 @@
         { "name": "timeMinutes", "label": "Time (minutes)", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "pace-calculator",
       "icon": "speech"
     },
@@ -371,6 +396,7 @@
         { "name": "radius", "label": "Radius", "type": "number" }
       ],
       "categoryId": 1,
+      "displayExpression": "",
       "slug": "circle-area-calculator",
       "icon": "circle-dashed"
     },
@@ -385,6 +411,7 @@
         { "name": "c", "label": "C", "type": "number" }
       ],
       "categoryId": 1,
+      "displayExpression": "",
       "slug": "quadratic-equation-solver",
       "icon": "decimals-arrow-right"
     },
@@ -398,6 +425,7 @@
         { "name": "weights", "label": "Weights", "type": "number[]" }
       ],
       "categoryId": 5,
+      "displayExpression": "",
       "slug": "rent-split-calculator",
       "icon": "house-plus"
     },
@@ -411,6 +439,7 @@
         { "name": "monthlyIncome", "label": "Monthly Income", "type": "number" }
       ],
       "categoryId": 3,
+      "displayExpression": "",
       "slug": "debt-to-income-ratio-calculator",
       "icon": "wallet-cards"
     },
@@ -424,6 +453,7 @@
         { "name": "weightKg", "label": "Weight (kg)", "type": "number" }
       ],
       "categoryId": 2,
+      "displayExpression": "",
       "slug": "body-surface-area-calculator",
       "icon": "hand"
     }

@@ -7,7 +7,7 @@ import CalculatorHeader from "./components/CalculatorHeader";
 export const metadata: Metadata = {
   title: {
     default: "Calculator Online – Free Calculators",
-    template: "%s | Calculator.online",
+    template: "%s | Calculator.Online",
   },
   description:
     "Convert over 500 units of length, mass, volume, pressure and more in one click. Accurate, ad-free & mobile-friendly.",
