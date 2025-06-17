@@ -6,14 +6,7 @@ import { CalculatorIconMap } from "@/app/model/types";
 
 export function CalculatorAnimateIcon({ icon, size = 100 }: { icon?: string; size?: number }) {
   const IconComponent = CalculatorIconMap[icon as keyof typeof CalculatorIconMap];
-
-  if (!IconComponent) {
-    console.warn(`Icon "${icon}" not found`);
-    return null;
-  }
-
   const iconRef = React.useRef<HTMLDivElement>(null);
-
   React.useEffect(() => {
     if (iconRef.current) {
       const svg = iconRef.current.querySelector("svg");
@@ -34,25 +27,29 @@ export function CalculatorAnimateIcon({ icon, size = 100 }: { icon?: string; siz
       });
     }
   }, []);
-
-  return (
-    <>
-      <style jsx global>{`
-        @keyframes draw {
-          to {
-            stroke-dashoffset: 0;
+  if (!IconComponent) {
+    console.warn(`Icon "${icon}" not found`);
+    return null;
+  } else {
+    return (
+      <>
+        <style jsx global>{`
+          @keyframes draw {
+            to {
+              stroke-dashoffset: 0;
+            }
           }
-        }
-      `}</style>
+        `}</style>
 
-      <motion.div
-        ref={iconRef}
-        whileHover={{ scale: 1.05 }}
-        transition={{ type: "spring", stiffness: 150 }}
-        style={{ width: size, height: size, display: "inline-block" }}
-      >
-        <IconComponent size={size} strokeWidth={2} />
-      </motion.div>
-    </>
-  );
+        <motion.div
+          ref={iconRef}
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 150 }}
+          style={{ width: size, height: size, display: "inline-block" }}
+        >
+          <IconComponent size={size} strokeWidth={2} />
+        </motion.div>
+      </>
+    );
+  }
 }
