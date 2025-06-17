@@ -34,7 +34,7 @@
       "categoryId": 1,
       "displayExpression": "%",
       "slug": "percentage-calculator",
-      "icon": "percent"
+      "icon": "Percent"
     },
     {
       "id": 2,
@@ -48,7 +48,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "bmi-calculator",
-      "icon": "person-standing"
+      "icon": "PersonStanding"
     },
     {
       "id": 3,
@@ -63,7 +63,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "mortgage-calculator",
-      "icon": "house"
+      "icon": "House"
     },
     {
       "id": 4,
@@ -78,7 +78,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "loan-calculator",
-      "icon": "hand-coins"
+      "icon": "HandCoins"
     },
     {
       "id": 5,
@@ -93,7 +93,7 @@
       "categoryId": 1,
       "displayExpression": "",
       "slug": "basic-calculator",
-      "icon": "calculator"
+      "icon": "Calculator"
     },
     {
       "id": 6,
@@ -107,7 +107,7 @@
       "categoryId": 4,
       "displayExpression": "",
       "slug": "age-calculator",
-      "icon": "calendar"
+      "icon": "Calendar"
     },
     {
       "id": 7,
@@ -122,7 +122,7 @@
       "categoryId": 5,
       "displayExpression": "",
       "slug": "tip-calculator",
-      "icon": "hand-platter"
+      "icon": "HandPlatter"
     },
     {
       "id": 8,
@@ -139,7 +139,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "calorie-calculator",
-      "icon": "ham"
+      "icon": "Ham"
     },
     {
       "id": 9,
@@ -156,7 +156,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "compound-interest-calculator",
-      "icon": "landmark"
+      "icon": "Landmark"
     },
     {
       "id": 10,
@@ -170,7 +170,7 @@
       "categoryId": 4,
       "displayExpression": "",
       "slug": "date-calculator",
-      "icon": "calendar-1"
+      "icon": "Calendar1"
     },
     {
       "id": 11,
@@ -184,7 +184,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "sales-tax-calculator",
-      "icon": "badge-dollar-sign"
+      "icon": "BadgeDollarSign"
     },
     {
       "id": 12,
@@ -198,7 +198,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "discount-calculator",
-      "icon": "badge-percent"
+      "icon": "BadgePercent"
     },
     {
       "id": 13,
@@ -212,7 +212,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "roi-calculator",
-      "icon": "briefcase-business"
+      "icon": "BriefcaseBusiness"
     },
     {
       "id": 14,
@@ -226,7 +226,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "markup-calculator",
-      "icon": "arrow-down-1-0"
+      "icon": "ArrowDown01"
     },
     {
       "id": 15,
@@ -240,7 +240,7 @@
       "categoryId": 1,
       "displayExpression": "",
       "slug": "gpa-calculator",
-      "icon": "school"
+      "icon": "School"
     },
     {
       "id": 16,
@@ -254,7 +254,7 @@
       "categoryId": 4,
       "displayExpression": "",
       "slug": "hours-calculator",
-      "icon": "clock"
+      "icon": "Clock"
     },
     {
       "id": 17,
@@ -267,7 +267,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "pregnancy-due-date-calculator",
-      "icon": "venus"
+      "icon": "Venus"
     },
     {
       "id": 18,
@@ -284,7 +284,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "body-fat-calculator",
-      "icon": "clipboard-plus"
+      "icon": "ClipboardPlus"
     },
     {
       "id": 19,
@@ -297,7 +297,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "target-heart-rate-calculator",
-      "icon": "heart-pulse"
+      "icon": "HeartPulse"
     },
     {
       "id": 20,
@@ -311,7 +311,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "sales-margin-calculator",
-      "icon": "tickets"
+      "icon": "Tickets"
     },
     {
       "id": 21,
@@ -327,7 +327,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "retirement-savings-calculator",
-      "icon": "piggy-bank"
+      "icon": "PiggyBank"
     },
     {
       "id": 22,
@@ -342,7 +342,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "vat-calculator",
-      "icon": "earth-lock"
+      "icon": "EarthLock"
     },
     {
       "id": 23,
@@ -356,7 +356,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "currency-converter",
-      "icon": "euro"
+      "icon": "Euro"
     },
     {
       "id": 24,
@@ -371,7 +371,7 @@
       "categoryId": 5,
       "displayExpression": "",
       "slug": "fuel-cost-calculator",
-      "icon": "fuel"
+      "icon": "Fuel"
     },
     {
       "id": 25,
@@ -385,7 +385,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "pace-calculator",
-      "icon": "speech"
+      "icon": "Speech"
     },
     {
       "id": 26,
@@ -398,7 +398,7 @@
       "categoryId": 1,
       "displayExpression": "",
       "slug": "circle-area-calculator",
-      "icon": "circle-dashed"
+      "icon": "CircleDashed"
     },
     {
       "id": 27,
@@ -413,7 +413,7 @@
       "categoryId": 1,
       "displayExpression": "",
       "slug": "quadratic-equation-solver",
-      "icon": "decimals-arrow-right"
+      "icon": "DecimalsArrowRight"
     },
     {
       "id": 28,
@@ -427,7 +427,7 @@
       "categoryId": 5,
       "displayExpression": "",
       "slug": "rent-split-calculator",
-      "icon": "house-plus"
+      "icon": "HousePlus"
     },
     {
       "id": 29,
@@ -441,7 +441,7 @@
       "categoryId": 3,
       "displayExpression": "",
       "slug": "debt-to-income-ratio-calculator",
-      "icon": "wallet-cards"
+      "icon": "WalletCards"
     },
     {
       "id": 30,
@@ -455,7 +455,7 @@
       "categoryId": 2,
       "displayExpression": "",
       "slug": "body-surface-area-calculator",
-      "icon": "hand"
+      "icon": "Hand"
     }
   ]
 }

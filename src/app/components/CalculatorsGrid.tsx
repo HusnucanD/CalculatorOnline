@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { DynamicIcon } from "lucide-react/dynamic";
 import { Card } from "@/components/ui/card";
 import { Calculator } from "@/app/model/types";
+import { CalculatorStaticIcon } from "./CalculatorStaticIcon";
 
 export const revalidate = false;
 
@@ -33,7 +33,7 @@ export default function CalculatorsGrid({ calculators }: CalculatorsGridProps) {
             transition-all ${getBG(idx)}`}
           >
             <div style={{ width: "40px", height: "40px" }}>
-              <DynamicIcon name={calculator.icon} size={40} />
+              <CalculatorStaticIcon icon={calculator.icon} size={40} />
             </div>
             <p className="text-base font-medium flex flex-col items-center w-[90%] min-h-14 text-center">
               {calculator.name}
