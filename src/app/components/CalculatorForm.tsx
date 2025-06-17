@@ -48,7 +48,7 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
   };
 
   return (
-    <div className="flex flex-col gap-1 overflow-y-auto pl-1 pr-4 -ml-1">
+    <div className="flex flex-col gap-1 overflow-y-auto pl-1 md:pr-4 -ml-1">
       {calculator.inputs.map((input, index) => {
         return (
           <div key={index}>
