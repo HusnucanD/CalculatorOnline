@@ -50,12 +50,12 @@ export default async function Page({ params }: any) {
       const categoryName =
         calculatorAndCategoryData.categories.find((x) => x.id == calculator.categoryId)?.name || "";
       return (
-        <main className="w-full px-4 md:px-8 pt-2 pb-10 mx-auto max-w-6xl h-auto md:min-h-full">
+        <main className="w-full px-4 md:px-8 pt-2 pb-10 mx-auto max-w-5xl h-auto md:min-h-full">
           <div className="flex flex-col md:flex-row gap-6">
-            <Card className={`w-full md:w-[50%] h-auto md:h-[60vh] p-6`}>
+            <Card className={`w-full md:w-[50%] h-auto md:h-[60vh] p-6 md:p-7`}>
               <CalculatorForm calculator={calculator}></CalculatorForm>
             </Card>
-            <Card className={`w-full md:w-[50%] h-auto md:h-[60vh] p-6 ${getBG(+calculator.id - 1)}`}>
+            <Card className={`w-full md:w-[50%] h-auto md:h-[60vh] p-6 md:p-7 ${getBG(+calculator.id - 1)}`}>
               <CalculatorInfo categoryName={categoryName} calculator={calculator}></CalculatorInfo>
             </Card>
           </div>

@@ -48,7 +48,7 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
   };
 
   return (
-    <div className="flex flex-col gap-1 overflow-y-auto pl-1 md:pr-4 -ml-1">
+    <div className="flex flex-col gap-1 overflow-y-auto pl-1 -ml-1 md:pr-4 md:-mr-3 pb-2">
       {calculator.inputs.map((input, index) => {
         return (
           <div key={index}>
@@ -63,16 +63,17 @@ export default function CalculatorForm({ calculator }: CalculatorFormProps) {
           </div>
         );
       })}
-      <div className="flex gap-2 mt-1">
+      <Label className="text-base font-medium">Result</Label>
+      <div className="bg-accent text-accent-foreground text-xl font-medium p-3 mb-3 rounded-md cursor-pointer text-center min-h-13">
+        {result + (result ? " " + calculator.displayExpression : "")}
+      </div>
+      <div className="flex gap-2 mt-2">
         <Button size="lg" className="cursor-pointer grow" onClick={handleCalculate}>
           <span className="text-base font-medium">Calculate</span>
         </Button>
         <Button size="lg" variant="secondary" className="cursor-pointer grow" onClick={handleClear}>
           <span className="text-base font-medium">Clear</span>
         </Button>
-      </div>
-      <div className="bg-accent text-accent-foreground text-xl font-medium p-3 mt-4 rounded-md cursor-pointer text-center min-h-13">
-        {result + (result ? " " + calculator.displayExpression : "")}
       </div>
     </div>
   );
